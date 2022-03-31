@@ -1,3 +1,4 @@
+/*Fonte do pokemon*/
 @font-face {
     font-family: 'Pokemon Solid'; /*menu font*/
     src: url('Pokemon\ Solid.ttf') format('truetype'),
@@ -10,16 +11,17 @@
     box-sizing: border-box;
 }
 
+
+
 html {
-    scroll-behavior: smooth;
-    overflow: hidden;
+    scroll-behavior: smooth; /*Efeito de scroll*/
+    overflow: hidden; /*Desabilita a barra de rolagem para que o suuario siga o quiz com os botões*/
 }
 body{
     font-family: 'Pokemon Solid';
     color: rgb(255, 238, 0);
-    text-shadow: 5px 5px 5px  black;
+    text-shadow: 3px 3px 3px  black;
     font-size: 20px;
-    background-color: hsl(0,  0%, 20%);
     letter-spacing: 5px;
 }
 
@@ -30,10 +32,11 @@ h1{
 }
 
 h2{
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 3px 3px 3px black;
     color: rgb(224, 134, 32);
+    margin-top: 20px;
 }
-
+/*Botão de CONTINUAR*/
  a{
     display: block;
     font-size: 25px;
@@ -47,40 +50,10 @@ h2{
     transition: all 0.3s ease-in-out;
      
 }
-
+/*altera o botão quando passa o mouse por cima*/
 a:hover {
     background-color:rgb(255, 166, 0);  
     border-radius: 28px;
-}
-
-.respostas {
-    list-style-type: lower-alpha;
-}
-
-.respostas li{
-    transition: all 0.5s ease-out;
-}
-
-.respostas li:hover {
-    cursor: pointer;
-    font-size: 25px;
-    color:rgb(1, 83, 15);  
-}
-
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 80px;
 }
 
 .perguntas {
@@ -92,7 +65,44 @@ section {
     list-style-type: decimal;
 }
 
-section {
-    height: 100vh;
-
+/*===== RESPOSTAS =========*/
+.respostas {
+    list-style-type: lower-alpha;
 }
+
+/* aumenta a fonte quando passa o mouse por cima da questao*/
+.respostas li{
+    transition: all 0.5s ;
+}
+
+.respostas li:hover {
+    cursor: pointer;
+    font-size: 30px;
+    color:rgb(1, 83, 15);  
+    text-shadow: 4px 4px 4px black;
+}
+
+
+section {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://cdn.wallpapersafari.com/34/68/Ampcnb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+
+
